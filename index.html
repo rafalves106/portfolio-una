@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rafael Martins Alves — Portfólio</title>
+<meta name="description" content="Portfólio de Rafael Martins Alves, graduando em Ciência da Computação, foco em desenvolvimento Fullstack (.NET e React).">
+<script>
+  (function () {
+    var saved = localStorage.getItem('theme');
+    var theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#inicio" class="brand">Rafael Alves</a>
+    <nav aria-label="Navegação principal">
+      <ul class="nav-list">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro">
+      <span aria-hidden="true">◐</span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section id="inicio" class="hero">
+    <div class="wrap">
+      <h1>Rafael Martins Alves</h1>
+      <p class="hero-role">Graduando em Ciência da Computação — UNA Aimorés, Belo Horizonte</p>
+      <p class="hero-lead">
+        Foco em desenvolvimento Fullstack (.NET e React), com objetivo de
+        aprofundar-se em arquitetura de software, boas práticas e segurança.
+      </p>
+      <div class="hero-actions">
+        <a href="#projetos" class="btn btn-accent">Ver projetos</a>
+        <a href="#contato" class="btn btn-outline">Contato</a>
+      </div>
+      <ul class="tag-row hero-tags" aria-label="Principais tecnologias">
+        <li>C#</li><li>.NET</li><li>React</li><li>TypeScript</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="sobre" class="section section-alt">
+    <div class="wrap">
+      <h2>Sobre mim</h2>
+      <p class="bio">
+        Com mais de 4 anos de experiência prévia como Designer Gráfico, possuo
+        um olhar apurado para UI/UX e visão de produto, o que me permite
+        construir interfaces Front-end não apenas funcionais, mas altamente
+        intuitivas e centradas na experiência do usuário. Atualmente, atuo na
+        sustentação e desenvolvimento de projetos de larga escala (Grupo
+        Fleury), aplicando arquitetura hexagonal e DDD com .NET, React e
+        Dart. Sou proativo e busco aprimoramento contínuo em arquitetura de
+        software, boas práticas e segurança.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Linguagens</h3>
+          <ul class="tag-row">
+            <li>C#</li><li>TypeScript</li><li>Java</li><li>Dart</li><li>SQL</li><li>HTML5</li><li>CSS3</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Frameworks</h3>
+          <ul class="tag-row">
+            <li>.NET</li><li>React</li><li>Flutter</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Ferramentas</h3>
+          <ul class="tag-row">
+            <li>Git/GitHub</li><li>Postman</li><li>Swagger</li><li>Azure</li><li>Kanban</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Idiomas</h3>
+          <ul class="tag-row">
+            <li>Inglês — avançado</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Experiência</h3>
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-head">
+            <strong>Desenvolvedor Estagiário</strong>
+            <span class="timeline-meta">DTI Sistemas · Mar/2026–atual</span>
+          </div>
+          <p>
+            Squad de sustentação de projetos do Grupo Fleury: resolução de
+            bugs, code reviews, homologação, publicação de atualizações,
+            integração/orquestração de agentes de IA, boas práticas em
+            ambiente de alta criticidade.
+          </p>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-head">
+            <strong>Designer Gráfico</strong>
+            <span class="timeline-meta">D2F Comunicação (BH/MG) · Jul/2020–Jan/2025</span>
+          </div>
+          <p>
+            Logomarcas e identidade visual, sites em WordPress, 100+ projetos
+            de web design/design gráfico, levantamento de requisitos com
+            cliente, gestão de prazos.
+          </p>
+        </li>
+      </ul>
+
+      <h3 class="subsection-title">Formação complementar</h3>
+      <ul class="plain-list">
+        <li>HTML5 (40h) — Curso em Vídeo</li>
+        <li>Vivência internacional (aprimoramento de idioma) — Estados Unidos, 2020</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projetos" class="section">
+    <div class="wrap">
+      <h2>Projetos</h2>
+
+      <div class="filter-bar" role="group" aria-label="Filtrar projetos por tecnologia">
+        <button class="filter-btn is-active" data-filter="todos" type="button">Todos</button>
+        <button class="filter-btn" data-filter=".net" type="button">.NET</button>
+        <button class="filter-btn" data-filter="react" type="button">React</button>
+        <button class="filter-btn" data-filter="python" type="button">Python</button>
+      </div>
+
+      <div class="project-grid">
+
+        <article class="project-card" data-tech=".net">
+          <h3>Gym API — Arquitetura Hexagonal em .NET</h3>
+          <p>
+            API REST em .NET estruturada em camadas bem definidas
+            (Application, Domain, Infrastructure, WebApi).
+          </p>
+          <details>
+            <summary>Mais informações</summary>
+            <p>
+              Aplica separação de responsabilidades e independência de
+              framework — demonstração de boas práticas arquiteturais em
+              backend, com arquitetura hexagonal/limpa.
+            </p>
+          </details>
+          <ul class="tag-row">
+            <li>.NET</li><li>C#</li><li>Arquitetura Hexagonal</li>
+          </ul>
+          <a class="project-link" href="https://github.com/rafalves106/Gym" target="_blank" rel="noopener noreferrer">
+            Ver repositório ↗
+          </a>
+        </article>
+
+        <article class="project-card" data-tech=".net react">
+          <h3>Finances Clean — Gestão de Finanças Pessoais</h3>
+          <p>
+            Aplicação full-stack para controlar movimentações, investimentos,
+            metas e custos de veículos.
+          </p>
+          <details>
+            <summary>Mais informações</summary>
+            <p>
+              API RESTful com Swagger, autenticação JWT, health checks, e
+              ambiente pronto para dev local via Docker Compose — inclui
+              runbooks de migração de banco pensados para produção/staging.
+            </p>
+          </details>
+          <ul class="tag-row">
+            <li>React</li><li>Vite</li><li>ASP.NET Core</li><li>PostgreSQL</li><li>Docker Compose</li>
+          </ul>
+          <a class="project-link" href="https://github.com/rafalves106/finances-clean" target="_blank" rel="noopener noreferrer">
+            Ver repositório ↗
+          </a>
+        </article>
+
+        <article class="project-card" data-tech="react python">
+          <h3>Recomenda.AI — Motor de Recomendação para E-commerce</h3>
+          <p>
+            Sistema acadêmico de recomendação personalizada baseado em IA,
+            com motor híbrido em 3 camadas (popularidade global, coocorrência
+            item-item, perfil do usuário).
+          </p>
+          <details>
+            <summary>Mais informações</summary>
+            <p>
+              Sugere produtos em tempo real. Inclui dashboard administrativo
+              com métricas e simulação de 50 usuários com perfis
+              comportamentais distintos.
+            </p>
+          </details>
+          <ul class="tag-row">
+            <li>React 18</li><li>TypeScript</li><li>Vite</li><li>Tailwind</li><li>Zustand</li><li>Python</li><li>FastAPI</li><li>SQLAlchemy</li>
+          </ul>
+          <a class="project-link" href="https://github.com/rafalves106/recomendai" target="_blank" rel="noopener noreferrer">
+            Ver repositório ↗
+          </a>
+        </article>
+
+      </div>
+      <p class="filter-empty" hidden>Nenhum projeto encontrado para esse filtro.</p>
+    </div>
+  </section>
+
+  <section id="contato" class="section section-alt">
+    <div class="wrap">
+      <h2>Contato</h2>
+
+      <ul class="contact-links">
+        <li><a href="https://github.com/rafalves106" target="_blank" rel="noopener noreferrer">GitHub — github.com/rafalves106</a></li>
+        <li><a href="https://linkedin.com/in/falves-dev" target="_blank" rel="noopener noreferrer">LinkedIn — linkedin.com/in/falves-dev</a></li>
+        <li><a href="mailto:rafalves106@icloud.com">E-mail — rafalves106@icloud.com</a></li>
+      </ul>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" autocomplete="name" required>
+          <span class="field-error" id="erro-nome" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+          <span class="field-error" id="erro-email" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          <span class="field-error" id="erro-mensagem" role="alert"></span>
+        </div>
+        <button type="submit" class="btn btn-accent">Enviar</button>
+        <p class="form-hint">
+          Este formulário não tem envio automático — ao validar, abre seu
+          cliente de e-mail com a mensagem pronta para rafalves106@icloud.com.
+        </p>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Rafael Martins Alves</p>
+  </div>
+</footer>
+
+<button id="back-to-top" class="back-to-top" type="button" aria-label="Voltar ao topo" hidden>
+  <span aria-hidden="true">↑</span>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
