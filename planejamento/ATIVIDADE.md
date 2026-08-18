@@ -1,4 +1,12 @@
-# Evidências de uso de IA — Portfólio Rafael Martins Alves
+# Atividade — Portfólio Rafael Martins Alves
+
+## ➡️ **Link da página publicada: [https://rafalves106.github.io/portfolio-una/](https://rafalves106.github.io/portfolio-una/)**
+
+Repositório: **[github.com/rafalves106/portfolio-una](https://github.com/rafalves106/portfolio-una)**
+
+---
+
+## Evidências de uso de IA
 
 Registro dos prompts usados na Fase 2 (Claude Code, implementação), a
 resposta da IA e a decisão tomada em cada um, conforme exigido pela
@@ -89,5 +97,5 @@ extra proposta pela própria IA.
 | 3 | Ativação do GitHub Pages | Aproveitado |
 | 4 | Adição dos 2 projetos + filtro Java | Aproveitado |
 
-Repositório: https://github.com/rafalves106/portfolio-una
-Site publicado: https://rafalves106.github.io/portfolio-una/
+**Repositório:** https://github.com/rafalves106/portfolio-una
+**Site publicado:** ➡️ https://rafalves106.github.io/portfolio-una/
